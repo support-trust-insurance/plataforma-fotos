@@ -1,12 +1,11 @@
 ﻿# Sistema de Fotos de Vehículos — Trust Insurance Services
 
 Captura guiada y validación automática de fotos de vehículos para emisión de pólizas.
-Proyecto de BritoCRM / Brito Marketing (Fase 1, entrega 26 oct 2026).
 
 ## Qué hace
 1. La persona abre un enlace (o QR), deja nombre, correo, teléfono y elige su tipo de vehículo.
 2. Toma 6 fotos guiadas, en una vuelta al vehículo en sentido horario (frente, lateral derecho, trasera, lateral izquierdo) y luego VIN y odómetro. Cada una se valida **en el navegador**: resolución, nitidez, exposición, que sea un vehículo en la posición correcta, que todas sean del mismo color. El VIN y el odómetro solo pasan por resolución, nitidez y exposición: no se leen con OCR.
-3. Las fotos y los datos se entregan **automáticamente a BritoCRM** (GoHighLevel).
+3. Las fotos y los datos se entregan **automáticamente al CRM** (GoHighLevel).
 
 ## Stack
 - Vite + JavaScript vanilla (todo el wizard corre en el navegador)
@@ -31,7 +30,7 @@ npm test         # pruebas automáticas
 ```
 Modo de diagnóstico: abrir el sitio con `?debug=1` (o tocar 5 veces el logo) muestra bajo cada foto las medidas de calidad y la versión publicada.
 
-## Conexión con BritoCRM (GoHighLevel)
+## Conexión con el CRM (GoHighLevel)
 
 ### Qué se guarda en el CRM
 Por cada persona que termina el wizard:
